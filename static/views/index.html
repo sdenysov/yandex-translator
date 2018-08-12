@@ -9,15 +9,15 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <form id="translate-form" action="" method="post">
+            <form id="translate-form" action="/translate" method="post">
                 <div class="form-group">
-                    <textarea class="form-control" rows="10" placeholder="Request" name="text"></textarea>
+                    <textarea class="form-control" rows="10" placeholder="Request" name="text"><%= inputText %></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary" name="translate-btn" value="translate">Translate</button>
             </form>
         </div>
         <div class="col-md-6">
-            <textarea id="translate-answer" class="form-control" rows="10" placeholder="Answer"></textarea>
+            <textarea id="translate-answer" class="form-control" rows="10" placeholder="Answer"><%= outputText %></textarea>
         </div>
     </div>
 </div>
